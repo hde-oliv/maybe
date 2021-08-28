@@ -31,6 +31,15 @@ int main(int argc, char *argv[]) {
 			print_version();
 		else if (!strncmp(*(argv + 1), "--help", 6))
 			print_help();
+		else {
+			while (1) {
+				int r = rand();
+				if (r < (RAND_MAX / 2))
+					printf("%s\n", *(argv + 1));
+				else
+					printf("\n");
+			}
+		}
 	}
 	else if (argc == 1) {
 		while (1) {
