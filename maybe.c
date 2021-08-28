@@ -13,6 +13,15 @@ void print_version(void) {
 		"Written by Henrique Rocha.\n");
 }
 
+void print_help(void) {
+	printf(
+		"Usage: maybe [STRING]\n"
+		"  or:  maybe OPTION\n"
+		"Maybe output a line with a specified STRING, or 'y', or 'n'.\n"
+		"      --help     display this help and exit\n"
+		"      --version  output version information and exit\n");
+}
+
 int main(int argc, char *argv[]) {
 
 	srand(time(NULL));
@@ -20,6 +29,8 @@ int main(int argc, char *argv[]) {
 	if (argc == 2) {
 		if (!strncmp(*(argv + 1), "--version", 9))
 			print_version();
+		else if (!strncmp(*(argv + 1), "--help", 6))
+			print_help();
 	}
 	else if (argc == 1) {
 		while (1) {
