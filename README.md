@@ -8,9 +8,9 @@ sudo make install
 ```
 And it's ready to use.
 
-## Todo
-- [ ] `--help` flag
-- [ ] `--version` flag
-- [ ] Take a string as input and maybe print it
+##  Todo
+- [x] `--help` flag
+- [x] `--version` flag
+- [x] Take a string as input and maybe print it
 
 ###### Licensed under MIT
