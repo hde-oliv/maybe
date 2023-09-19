@@ -13,4 +13,5 @@ And it's ready to use.
 - [x] `--version` flag
 - [x] Take a string as input and maybe print it
 
-###### Licensed under MIT
+## License
+This project is licensed under the GNU General Public License v3.0 - see the [COPYING](https://github.com/hde-oliv/maybe/blob/master/COPYING) file for details.
